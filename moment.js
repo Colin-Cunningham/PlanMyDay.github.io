@@ -1,8 +1,12 @@
 
 var result= moment().format('LLLL');
-
+var currentTime= moment().format('LT')
 var todaysDate = $('#date')
     todaysDate.text('Todays Date: ' + result)
+
+    var checkTime= $('#current-time');
+
+    console.log(checkTime)
  
 var saveButton = $('#buttonOne')
 
@@ -16,6 +20,15 @@ var three = $('#3PM')
 var four = $('#4PM')
 var five = $('#4PM')
 
+
+function getTime(){
+  console.log(currentTime)
+ if(currentTime < moment().valueOf(checkTime)){
+   
+ }
+
+}
+getTime()
 
 
 function displayData(){

@@ -1,22 +1,99 @@
-
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Todo List</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style2.css" />
+    <title>Work Day Scheduler</title>
   </head>
+
   <body>
-    <div class="todos">
-      <form id="todo-form" method="POST">
-        <label for="todo-text">Add a Todo:</label>
-        <input type="text" placeholder="What needs to be done?" name="todo-text" id="todo-text" />
-      </form>
-      <p>Todo Count: <span id="todo-count">0</span></p>
-      <ul id="todo-list"></ul>
-    </div>
-    <script src="script.js"></script>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id=date></p>
+    </header>
+    <div class="container">
+      
+           <div class="input-group">
+              <p id="current-time" class="col-md-1 hour align-items-center row"> 9:00  AM </p>
+              <input type="text" class="col-md-10 description" name="tasks" value="" id="9AM">
+               <button type="submit"  class="saveBtn" id="submit-button1">Save</button> 
+          </div>
+          
+          <div class="input-group">
+              <p id="current-time" class="col-md-1 hour align-items-center row">10:00 AM </p>
+              <input type="text" class="col-md-10 description" name="tasks" value="" id="10AM">
+              <button type="button" class="saveBtn"  id="submit-button2">Save</button>
+              
+          </div>
+          
+          <div class="input-group">
+                  <p id="current-time" class="col-md-1 hour align-items-center row">11:00 AM </p>
+               <input type="text" class="col-md-10 description" name="tasks" value="" id="11AM">
+                  <button type="button" class="saveBtn" id="submit-button3">Save</button>
+              
+          </div>
+          
+          <div class="input-group">
+                  <p id="current-time" class="col-md-1 hour align-items-center row">12:00 PM </p>
+              <input type="text" class="col-md-10 description" name="tasks" value="" id= "12PM">
+                  <button type="button" class="saveBtn" id="submit-button4">Save</button>
+              
+          </div>
+          
+          <div class="input-group">
+                  <p id="current-time" class="col-md-1 hour align-items-center row">1:00  PM </p>
+              <input type="text" class="col-md-10 description" name="tasks" value="" id="1PM">
+                  <button type="button" class="saveBtn" id="submit-button5">Save</button>
+              
+          </div>
+          
+          <div class="input-group">
+                  <p id="current-time" class="col-md-1 hour align-items-center row">2:00  PM </p>
+              <input type="text" class="col-md-10 description" name="tasks" value="" id="2PM">
+                  <button type="button" class="saveBtn" id="submit-button6">Save</button>
+              
+          </div>
+          
+          <div class="input-group">
+                  <p id="current-time" class="col-md-1 hour align-items-center row">3:00  PM </p>
+              <input type="text" class="col-md-10 description" name="tasks" value="" id="3PM">
+                  <button type="button" class="saveBtn" id="submit-button7">Save</button>
+              
+          </div>
+          
+          <div class="input-group">
+                  <p id="current-time" class="col-md-1 hour align-items-center row">4:00  PM </p>
+              <input type="text" class="col-md-10 description" name="tasks" value="" id="4PM">
+                  <button type="button" class="saveBtn" id="submit-button8">Save</button>
+              
+          </div>
+          
+          <div class="input-group">
+                  <p id="current-time" class="col-md-1 hour align-items-center row">5:00  PM </p>
+              <input type="text" class="col-md-10 description" name="tasks" value="" id="5PM">
+                  <button type="button" class="saveBtn" id="submit-button9">Save</button>
+              
+          </div>
+          </ul>
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="moment.js"></script>
   </body>
 </html>
