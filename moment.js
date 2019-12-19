@@ -4,9 +4,13 @@ var currentTime= moment().format('LT')
 var todaysDate = $('#date')
     todaysDate.text('Todays Date: ' + result)
 
-    var checkTime= $('#current-time');
+var checkTime= $('<p>');
+var currentHour= currentTime.charAt(0)
+var passedTask = $('.past')
 
-    console.log(checkTime)
+
+console.log($(this).attr('#9'))
+console.log(passedTask)
  
 var saveButton = $('#buttonOne')
 
@@ -21,11 +25,16 @@ var four = $('#4PM')
 var five = $('#4PM')
 
 
+
+function changeClass(){
+   $(".row").css("bakcground", "red")
+}
+changeClass()
+
 function getTime(){
-  console.log(currentTime)
- if(currentTime < moment().valueOf(checkTime)){
-   
- }
+ if( currentHour > 10){
+    
+      }
 
 }
 getTime()
